@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/sha1.dir/main.c.o CMakeFiles/sha1.dir/sha1.c.o  -o sha1 

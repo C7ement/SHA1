@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/douglas/CLionProjects/sha1/main.c
+sha1.h
+/home/douglas/CLionProjects/sha1/sha1.h
+
+/home/douglas/CLionProjects/sha1/sha1.c
+sha1.h
+/home/douglas/CLionProjects/sha1/sha1.h
+
+/home/douglas/CLionProjects/sha1/sha1.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdint.h
+-
+

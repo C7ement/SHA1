@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -pedantic -O3
+CFLAGS=-Wextra -pedantic -O3 
 
 PATHOBJ=./obj/
 PATHSRC= ./

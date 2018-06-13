@@ -18,6 +18,6 @@ void extendM_opt_0(uint32_t* M, uint32_t* W);
 
 void printW_opt_0(uint32_t* W);
 
-void w0_occurence(int t);
+void wt_occurence(int t);
 
 #endif //SHA1PROJECT_SHA1OPT_H

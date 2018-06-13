@@ -11,7 +11,7 @@ int main() {
     }
     printf("\n");
 
-    //w0_occurence(0);
+    //wt_occurence(0);
 
     uint32_t* H2 = SHA1_opt_0(s);
     printf("\nSHA-1:  ");

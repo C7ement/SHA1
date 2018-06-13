@@ -166,7 +166,7 @@ void extendM_opt_0(uint32_t* M, uint32_t* W) {
  *Fonction permettant de déterminer la rotation de w[t] à ajouter à chaque PW.
  *
  */
-void w0_occurence(int t) {
+void wt_occurence(int t) {
     int i,j;
     int** wt = malloc(sizeof(int*)*80);
     for (i=0; i<16; i++) {

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sha1.dir/main.c.o"
   "CMakeFiles/sha1.dir/sha1.c.o"
+  "CMakeFiles/sha1.dir/sha1opt.c.o"
   "sha1.pdb"
   "sha1"
 )

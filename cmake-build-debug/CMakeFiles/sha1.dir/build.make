@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/douglas/Documents/logiciel/clion-2018.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/clion-2018.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/douglas/Documents/logiciel/clion-2018.1/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/douglas/CLionProjects/sha1
+CMAKE_SOURCE_DIR = /home/personnels/labonne/Documents/SHA1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/douglas/CLionProjects/sha1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/personnels/labonne/Documents/SHA1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sha1.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/sha1.dir/flags.make
 
 CMakeFiles/sha1.dir/main.c.o: CMakeFiles/sha1.dir/flags.make
 CMakeFiles/sha1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/douglas/CLionProjects/sha1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sha1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/main.c.o   -c /home/douglas/CLionProjects/sha1/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sha1.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/main.c.o   -c /home/personnels/labonne/Documents/SHA1/main.c
 
 CMakeFiles/sha1.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/douglas/CLionProjects/sha1/main.c > CMakeFiles/sha1.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/main.c > CMakeFiles/sha1.dir/main.c.i
 
 CMakeFiles/sha1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/douglas/CLionProjects/sha1/main.c -o CMakeFiles/sha1.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/main.c -o CMakeFiles/sha1.dir/main.c.s
 
 CMakeFiles/sha1.dir/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/sha1.dir/main.c.o.provides.build: CMakeFiles/sha1.dir/main.c.o
 
 CMakeFiles/sha1.dir/sha1.c.o: CMakeFiles/sha1.dir/flags.make
 CMakeFiles/sha1.dir/sha1.c.o: ../sha1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/douglas/CLionProjects/sha1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sha1.dir/sha1.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/sha1.c.o   -c /home/douglas/CLionProjects/sha1/sha1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sha1.dir/sha1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/sha1.c.o   -c /home/personnels/labonne/Documents/SHA1/sha1.c
 
 CMakeFiles/sha1.dir/sha1.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/sha1.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/douglas/CLionProjects/sha1/sha1.c > CMakeFiles/sha1.dir/sha1.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/sha1.c > CMakeFiles/sha1.dir/sha1.c.i
 
 CMakeFiles/sha1.dir/sha1.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/sha1.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/douglas/CLionProjects/sha1/sha1.c -o CMakeFiles/sha1.dir/sha1.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/sha1.c -o CMakeFiles/sha1.dir/sha1.c.s
 
 CMakeFiles/sha1.dir/sha1.c.o.requires:
 
@@ -105,19 +105,45 @@ CMakeFiles/sha1.dir/sha1.c.o.provides: CMakeFiles/sha1.dir/sha1.c.o.requires
 CMakeFiles/sha1.dir/sha1.c.o.provides.build: CMakeFiles/sha1.dir/sha1.c.o
 
 
+CMakeFiles/sha1.dir/sha1opt.c.o: CMakeFiles/sha1.dir/flags.make
+CMakeFiles/sha1.dir/sha1opt.c.o: ../sha1opt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/sha1.dir/sha1opt.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/sha1opt.c.o   -c /home/personnels/labonne/Documents/SHA1/sha1opt.c
+
+CMakeFiles/sha1.dir/sha1opt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/sha1opt.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/sha1opt.c > CMakeFiles/sha1.dir/sha1opt.c.i
+
+CMakeFiles/sha1.dir/sha1opt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/sha1opt.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/sha1opt.c -o CMakeFiles/sha1.dir/sha1opt.c.s
+
+CMakeFiles/sha1.dir/sha1opt.c.o.requires:
+
+.PHONY : CMakeFiles/sha1.dir/sha1opt.c.o.requires
+
+CMakeFiles/sha1.dir/sha1opt.c.o.provides: CMakeFiles/sha1.dir/sha1opt.c.o.requires
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/sha1opt.c.o.provides.build
+.PHONY : CMakeFiles/sha1.dir/sha1opt.c.o.provides
+
+CMakeFiles/sha1.dir/sha1opt.c.o.provides.build: CMakeFiles/sha1.dir/sha1opt.c.o
+
+
 # Object files for target sha1
 sha1_OBJECTS = \
 "CMakeFiles/sha1.dir/main.c.o" \
-"CMakeFiles/sha1.dir/sha1.c.o"
+"CMakeFiles/sha1.dir/sha1.c.o" \
+"CMakeFiles/sha1.dir/sha1opt.c.o"
 
 # External object files for target sha1
 sha1_EXTERNAL_OBJECTS =
 
 sha1: CMakeFiles/sha1.dir/main.c.o
 sha1: CMakeFiles/sha1.dir/sha1.c.o
+sha1: CMakeFiles/sha1.dir/sha1opt.c.o
 sha1: CMakeFiles/sha1.dir/build.make
 sha1: CMakeFiles/sha1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/douglas/CLionProjects/sha1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable sha1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable sha1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sha1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +153,7 @@ CMakeFiles/sha1.dir/build: sha1
 
 CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/main.c.o.requires
 CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/sha1.c.o.requires
+CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/sha1opt.c.o.requires
 
 .PHONY : CMakeFiles/sha1.dir/requires
 
@@ -135,6 +162,6 @@ CMakeFiles/sha1.dir/clean:
 .PHONY : CMakeFiles/sha1.dir/clean
 
 CMakeFiles/sha1.dir/depend:
-	cd /home/douglas/CLionProjects/sha1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/douglas/CLionProjects/sha1 /home/douglas/CLionProjects/sha1 /home/douglas/CLionProjects/sha1/cmake-build-debug /home/douglas/CLionProjects/sha1/cmake-build-debug /home/douglas/CLionProjects/sha1/cmake-build-debug/CMakeFiles/sha1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/personnels/labonne/Documents/SHA1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/personnels/labonne/Documents/SHA1 /home/personnels/labonne/Documents/SHA1 /home/personnels/labonne/Documents/SHA1/cmake-build-debug /home/personnels/labonne/Documents/SHA1/cmake-build-debug /home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles/sha1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sha1.dir/depend
 

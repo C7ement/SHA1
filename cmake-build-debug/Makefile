@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/douglas/Documents/logiciel/clion-2018.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /usr/local/clion-2018.1.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/douglas/Documents/logiciel/clion-2018.1/bin/cmake/bin/cmake -E remove -f
+RM = /usr/local/clion-2018.1.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/douglas/CLionProjects/sha1
+CMAKE_SOURCE_DIR = /home/personnels/labonne/Documents/SHA1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/douglas/CLionProjects/sha1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/personnels/labonne/Documents/SHA1/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/douglas/CLionProjects/sha1/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/douglas/Documents/logiciel/clion-2018.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/clion-2018.1.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/douglas/Documents/logiciel/clion-2018.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/clion-2018.1.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/douglas/CLionProjects/sha1/cmake-build-debug/CMakeFiles /home/douglas/CLionProjects/sha1/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles /home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/douglas/CLionProjects/sha1/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,33 @@ sha1.c.s:
 	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/sha1.c.s
 .PHONY : sha1.c.s
 
+sha1opt.o: sha1opt.c.o
+
+.PHONY : sha1opt.o
+
+# target to build an object file
+sha1opt.c.o:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/sha1opt.c.o
+.PHONY : sha1opt.c.o
+
+sha1opt.i: sha1opt.c.i
+
+.PHONY : sha1opt.i
+
+# target to preprocess a source file
+sha1opt.c.i:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/sha1opt.c.i
+.PHONY : sha1opt.c.i
+
+sha1opt.s: sha1opt.c.s
+
+.PHONY : sha1opt.s
+
+# target to generate assembly for a file
+sha1opt.c.s:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/sha1opt.c.s
+.PHONY : sha1opt.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... sha1.o"
 	@echo "... sha1.i"
 	@echo "... sha1.s"
+	@echo "... sha1opt.o"
+	@echo "... sha1opt.i"
+	@echo "... sha1opt.s"
 .PHONY : help
 
 

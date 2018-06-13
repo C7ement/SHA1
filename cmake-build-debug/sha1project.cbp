@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/douglas/CLionProjects/sha1/cmake-build-debug"/>
+				<Option working_dir="/home/personnels/labonne/Documents/SHA1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/douglas/CLionProjects/sha1/cmake-build-debug"/>
+				<Option working_dir="/home/personnels/labonne/Documents/SHA1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/douglas/CLionProjects/sha1/cmake-build-debug"/>
+				<Option working_dir="/home/personnels/labonne/Documents/SHA1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sha1">
-				<Option output="/home/douglas/CLionProjects/sha1/cmake-build-debug/sha1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/douglas/CLionProjects/sha1/cmake-build-debug"/>
+				<Option output="/home/personnels/labonne/Documents/SHA1/cmake-build-debug/sha1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/personnels/labonne/Documents/SHA1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 sha1"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 sha1"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sha1/fast">
-				<Option output="/home/douglas/CLionProjects/sha1/cmake-build-debug/sha1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/douglas/CLionProjects/sha1/cmake-build-debug"/>
+				<Option output="/home/personnels/labonne/Documents/SHA1/cmake-build-debug/sha1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/personnels/labonne/Documents/SHA1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,23 +71,29 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 sha1/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/douglas/CLionProjects/sha1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 sha1/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/personnels/labonne/Documents/SHA1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/douglas/CLionProjects/sha1/main.c">
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/main.c">
 			<Option target="sha1"/>
 		</Unit>
-		<Unit filename="/home/douglas/CLionProjects/sha1/sha1.c">
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/sha1.c">
 			<Option target="sha1"/>
 		</Unit>
-		<Unit filename="/home/douglas/CLionProjects/sha1/sha1.h">
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/sha1.h">
 			<Option target="sha1"/>
 		</Unit>
-		<Unit filename="/home/douglas/CLionProjects/sha1/CMakeLists.txt">
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/sha1opt.c">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/sha1opt.h">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -1,4 +1,5 @@
 #include "sha1.h"
+#include "sha1opt.h"
 
 int main() {
     unsigned char s[] = "";
@@ -10,7 +11,7 @@ int main() {
     }
     printf("\n");
 
-    w0_occurence(0);
+    //w0_occurence(0);
 
     uint32_t* H2 = SHA1_opt_0(s);
     printf("\nSHA-1:  ");

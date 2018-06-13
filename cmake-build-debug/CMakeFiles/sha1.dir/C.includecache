@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/douglas/CLionProjects/sha1/main.c
+/home/personnels/labonne/Documents/SHA1/main.c
 sha1.h
-/home/douglas/CLionProjects/sha1/sha1.h
+/home/personnels/labonne/Documents/SHA1/sha1.h
+sha1opt.h
+/home/personnels/labonne/Documents/SHA1/sha1opt.h
 
-/home/douglas/CLionProjects/sha1/sha1.c
+/home/personnels/labonne/Documents/SHA1/sha1.c
 sha1.h
-/home/douglas/CLionProjects/sha1/sha1.h
+/home/personnels/labonne/Documents/SHA1/sha1.h
 
-/home/douglas/CLionProjects/sha1/sha1.h
+/home/personnels/labonne/Documents/SHA1/sha1.h
 stdio.h
 -
 stdlib.h
@@ -23,4 +25,20 @@ string.h
 -
 stdint.h
 -
+
+/home/personnels/labonne/Documents/SHA1/sha1opt.c
+sha1opt.h
+/home/personnels/labonne/Documents/SHA1/sha1opt.h
+
+/home/personnels/labonne/Documents/SHA1/sha1opt.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdint.h
+-
+sha1.h
+/home/personnels/labonne/Documents/SHA1/sha1.h
 

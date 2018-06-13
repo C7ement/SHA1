@@ -3,7 +3,12 @@
 
 CMakeFiles/sha1.dir/main.c.o: ../main.c
 CMakeFiles/sha1.dir/main.c.o: ../sha1.h
+CMakeFiles/sha1.dir/main.c.o: ../sha1opt.h
 
 CMakeFiles/sha1.dir/sha1.c.o: ../sha1.c
 CMakeFiles/sha1.dir/sha1.c.o: ../sha1.h
+
+CMakeFiles/sha1.dir/sha1opt.c.o: ../sha1.h
+CMakeFiles/sha1.dir/sha1opt.c.o: ../sha1opt.c
+CMakeFiles/sha1.dir/sha1opt.c.o: ../sha1opt.h
 

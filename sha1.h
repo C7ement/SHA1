@@ -10,6 +10,16 @@
 #ifndef SHA1_SHA1_H
 #define SHA1_SHA1_H
 
-int* sha1(char* s1);
+uint32_t* SHA1(unsigned char* s1);
+
+void breakM(unsigned char* s, uint32_t* M);
+
+void printBreakM(uint32_t* M);
+
+void extendM(uint32_t* M, uint32_t* W);
+
+void printW(uint32_t* W);
+
+void hashW(uint32_t* W, uint32_t* K, uint32_t* H);
 
 #endif //SHA1_SHA1_H

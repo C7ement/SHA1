@@ -1,8 +1,23 @@
 #include "sha1.h"
+#include "sha1opt.h"
 
 int main() {
-    char s[] = "Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!";
-    //0a0a9f2a6772942557ab5355d76af442f8f65e01
-    sha1(s);
+    unsigned char s[] = "";
+
+    uint32_t* H = SHA1(s);
+    printf("\nSHA-1:  ");
+    for (int i=0; i<5; i++) {
+      printf("%08lx ",H[i]);
+    }
+    printf("\n");
+
+    //w0_occurence(0);
+
+    uint32_t* H2 = SHA1_opt_0(s);
+    printf("\nSHA-1:  ");
+    for (int i=0; i<5; i++) {
+      printf("%08lx ",H2[i]);
+    }
+    printf("\n");
     return 0;
 }

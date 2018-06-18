@@ -123,32 +123,59 @@ sha1/fast:
 	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/build
 .PHONY : sha1/fast
 
-main.o: main.c.o
+earlyExit.o: earlyExit.c.o
 
-.PHONY : main.o
+.PHONY : earlyExit.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/main.c.o
-.PHONY : main.c.o
+earlyExit.c.o:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/earlyExit.c.o
+.PHONY : earlyExit.c.o
 
-main.i: main.c.i
+earlyExit.i: earlyExit.c.i
 
-.PHONY : main.i
+.PHONY : earlyExit.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/main.c.i
-.PHONY : main.c.i
+earlyExit.c.i:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/earlyExit.c.i
+.PHONY : earlyExit.c.i
 
-main.s: main.c.s
+earlyExit.s: earlyExit.c.s
 
-.PHONY : main.s
+.PHONY : earlyExit.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/main.c.s
-.PHONY : main.c.s
+earlyExit.c.s:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/earlyExit.c.s
+.PHONY : earlyExit.c.s
+
+passwordGenerator.o: passwordGenerator.c.o
+
+.PHONY : passwordGenerator.o
+
+# target to build an object file
+passwordGenerator.c.o:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/passwordGenerator.c.o
+.PHONY : passwordGenerator.c.o
+
+passwordGenerator.i: passwordGenerator.c.i
+
+.PHONY : passwordGenerator.i
+
+# target to preprocess a source file
+passwordGenerator.c.i:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/passwordGenerator.c.i
+.PHONY : passwordGenerator.c.i
+
+passwordGenerator.s: passwordGenerator.c.s
+
+.PHONY : passwordGenerator.s
+
+# target to generate assembly for a file
+passwordGenerator.c.s:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/passwordGenerator.c.s
+.PHONY : passwordGenerator.c.s
 
 sha1.o: sha1.c.o
 
@@ -204,6 +231,60 @@ sha1opt.c.s:
 	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/sha1opt.c.s
 .PHONY : sha1opt.c.s
 
+solveHash.o: solveHash.c.o
+
+.PHONY : solveHash.o
+
+# target to build an object file
+solveHash.c.o:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/solveHash.c.o
+.PHONY : solveHash.c.o
+
+solveHash.i: solveHash.c.i
+
+.PHONY : solveHash.i
+
+# target to preprocess a source file
+solveHash.c.i:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/solveHash.c.i
+.PHONY : solveHash.c.i
+
+solveHash.s: solveHash.c.s
+
+.PHONY : solveHash.s
+
+# target to generate assembly for a file
+solveHash.c.s:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/solveHash.c.s
+.PHONY : solveHash.c.s
+
+testSHA1.o: testSHA1.c.o
+
+.PHONY : testSHA1.o
+
+# target to build an object file
+testSHA1.c.o:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/testSHA1.c.o
+.PHONY : testSHA1.c.o
+
+testSHA1.i: testSHA1.c.i
+
+.PHONY : testSHA1.i
+
+# target to preprocess a source file
+testSHA1.c.i:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/testSHA1.c.i
+.PHONY : testSHA1.c.i
+
+testSHA1.s: testSHA1.c.s
+
+.PHONY : testSHA1.s
+
+# target to generate assembly for a file
+testSHA1.c.s:
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/testSHA1.c.s
+.PHONY : testSHA1.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,15 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... sha1"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... earlyExit.o"
+	@echo "... earlyExit.i"
+	@echo "... earlyExit.s"
+	@echo "... passwordGenerator.o"
+	@echo "... passwordGenerator.i"
+	@echo "... passwordGenerator.s"
 	@echo "... sha1.o"
 	@echo "... sha1.i"
 	@echo "... sha1.s"
 	@echo "... sha1opt.o"
 	@echo "... sha1opt.i"
 	@echo "... sha1opt.s"
+	@echo "... solveHash.o"
+	@echo "... solveHash.i"
+	@echo "... solveHash.s"
+	@echo "... testSHA1.o"
+	@echo "... testSHA1.i"
+	@echo "... testSHA1.s"
 .PHONY : help
 
 

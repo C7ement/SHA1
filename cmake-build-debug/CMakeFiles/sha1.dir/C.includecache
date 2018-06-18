@@ -6,11 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/personnels/labonne/Documents/SHA1/main.c
+/home/personnels/labonne/Documents/SHA1/earlyExit.c
+earlyExit.h
+/home/personnels/labonne/Documents/SHA1/earlyExit.h
+
+/home/personnels/labonne/Documents/SHA1/earlyExit.h
 sha1.h
 /home/personnels/labonne/Documents/SHA1/sha1.h
 sha1opt.h
 /home/personnels/labonne/Documents/SHA1/sha1opt.h
+time.h
+-
+
+/home/personnels/labonne/Documents/SHA1/passwordGenerator.c
+passwordGenerator.h
+/home/personnels/labonne/Documents/SHA1/passwordGenerator.h
+
+/home/personnels/labonne/Documents/SHA1/passwordGenerator.h
+sha1.h
+/home/personnels/labonne/Documents/SHA1/sha1.h
+sha1opt.h
+/home/personnels/labonne/Documents/SHA1/sha1opt.h
+time.h
+-
 
 /home/personnels/labonne/Documents/SHA1/sha1.c
 sha1.h
@@ -41,4 +59,24 @@ stdint.h
 -
 sha1.h
 /home/personnels/labonne/Documents/SHA1/sha1.h
+
+/home/personnels/labonne/Documents/SHA1/solveHash.c
+solveHash.h
+/home/personnels/labonne/Documents/SHA1/solveHash.h
+
+/home/personnels/labonne/Documents/SHA1/solveHash.h
+earlyExit.h
+/home/personnels/labonne/Documents/SHA1/earlyExit.h
+
+/home/personnels/labonne/Documents/SHA1/testSHA1.c
+sha1.h
+/home/personnels/labonne/Documents/SHA1/sha1.h
+sha1opt.h
+/home/personnels/labonne/Documents/SHA1/sha1opt.h
+passwordGenerator.h
+/home/personnels/labonne/Documents/SHA1/passwordGenerator.h
+earlyExit.h
+/home/personnels/labonne/Documents/SHA1/earlyExit.h
+solveHash.h
+/home/personnels/labonne/Documents/SHA1/solveHash.h
 

@@ -57,28 +57,28 @@ include CMakeFiles/sha1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sha1.dir/flags.make
 
-CMakeFiles/sha1.dir/main.c.o: CMakeFiles/sha1.dir/flags.make
-CMakeFiles/sha1.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sha1.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/main.c.o   -c /home/personnels/labonne/Documents/SHA1/main.c
+CMakeFiles/sha1.dir/testSHA1.c.o: CMakeFiles/sha1.dir/flags.make
+CMakeFiles/sha1.dir/testSHA1.c.o: ../testSHA1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sha1.dir/testSHA1.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/testSHA1.c.o   -c /home/personnels/labonne/Documents/SHA1/testSHA1.c
 
-CMakeFiles/sha1.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/main.c > CMakeFiles/sha1.dir/main.c.i
+CMakeFiles/sha1.dir/testSHA1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/testSHA1.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/testSHA1.c > CMakeFiles/sha1.dir/testSHA1.c.i
 
-CMakeFiles/sha1.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/main.c -o CMakeFiles/sha1.dir/main.c.s
+CMakeFiles/sha1.dir/testSHA1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/testSHA1.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/testSHA1.c -o CMakeFiles/sha1.dir/testSHA1.c.s
 
-CMakeFiles/sha1.dir/main.c.o.requires:
+CMakeFiles/sha1.dir/testSHA1.c.o.requires:
 
-.PHONY : CMakeFiles/sha1.dir/main.c.o.requires
+.PHONY : CMakeFiles/sha1.dir/testSHA1.c.o.requires
 
-CMakeFiles/sha1.dir/main.c.o.provides: CMakeFiles/sha1.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/sha1.dir/main.c.o.provides
+CMakeFiles/sha1.dir/testSHA1.c.o.provides: CMakeFiles/sha1.dir/testSHA1.c.o.requires
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/testSHA1.c.o.provides.build
+.PHONY : CMakeFiles/sha1.dir/testSHA1.c.o.provides
 
-CMakeFiles/sha1.dir/main.c.o.provides.build: CMakeFiles/sha1.dir/main.c.o
+CMakeFiles/sha1.dir/testSHA1.c.o.provides.build: CMakeFiles/sha1.dir/testSHA1.c.o
 
 
 CMakeFiles/sha1.dir/sha1.c.o: CMakeFiles/sha1.dir/flags.make
@@ -129,21 +129,99 @@ CMakeFiles/sha1.dir/sha1opt.c.o.provides: CMakeFiles/sha1.dir/sha1opt.c.o.requir
 CMakeFiles/sha1.dir/sha1opt.c.o.provides.build: CMakeFiles/sha1.dir/sha1opt.c.o
 
 
+CMakeFiles/sha1.dir/passwordGenerator.c.o: CMakeFiles/sha1.dir/flags.make
+CMakeFiles/sha1.dir/passwordGenerator.c.o: ../passwordGenerator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/sha1.dir/passwordGenerator.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/passwordGenerator.c.o   -c /home/personnels/labonne/Documents/SHA1/passwordGenerator.c
+
+CMakeFiles/sha1.dir/passwordGenerator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/passwordGenerator.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/passwordGenerator.c > CMakeFiles/sha1.dir/passwordGenerator.c.i
+
+CMakeFiles/sha1.dir/passwordGenerator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/passwordGenerator.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/passwordGenerator.c -o CMakeFiles/sha1.dir/passwordGenerator.c.s
+
+CMakeFiles/sha1.dir/passwordGenerator.c.o.requires:
+
+.PHONY : CMakeFiles/sha1.dir/passwordGenerator.c.o.requires
+
+CMakeFiles/sha1.dir/passwordGenerator.c.o.provides: CMakeFiles/sha1.dir/passwordGenerator.c.o.requires
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/passwordGenerator.c.o.provides.build
+.PHONY : CMakeFiles/sha1.dir/passwordGenerator.c.o.provides
+
+CMakeFiles/sha1.dir/passwordGenerator.c.o.provides.build: CMakeFiles/sha1.dir/passwordGenerator.c.o
+
+
+CMakeFiles/sha1.dir/earlyExit.c.o: CMakeFiles/sha1.dir/flags.make
+CMakeFiles/sha1.dir/earlyExit.c.o: ../earlyExit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/sha1.dir/earlyExit.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/earlyExit.c.o   -c /home/personnels/labonne/Documents/SHA1/earlyExit.c
+
+CMakeFiles/sha1.dir/earlyExit.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/earlyExit.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/earlyExit.c > CMakeFiles/sha1.dir/earlyExit.c.i
+
+CMakeFiles/sha1.dir/earlyExit.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/earlyExit.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/earlyExit.c -o CMakeFiles/sha1.dir/earlyExit.c.s
+
+CMakeFiles/sha1.dir/earlyExit.c.o.requires:
+
+.PHONY : CMakeFiles/sha1.dir/earlyExit.c.o.requires
+
+CMakeFiles/sha1.dir/earlyExit.c.o.provides: CMakeFiles/sha1.dir/earlyExit.c.o.requires
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/earlyExit.c.o.provides.build
+.PHONY : CMakeFiles/sha1.dir/earlyExit.c.o.provides
+
+CMakeFiles/sha1.dir/earlyExit.c.o.provides.build: CMakeFiles/sha1.dir/earlyExit.c.o
+
+
+CMakeFiles/sha1.dir/solveHash.c.o: CMakeFiles/sha1.dir/flags.make
+CMakeFiles/sha1.dir/solveHash.c.o: ../solveHash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/sha1.dir/solveHash.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/sha1.dir/solveHash.c.o   -c /home/personnels/labonne/Documents/SHA1/solveHash.c
+
+CMakeFiles/sha1.dir/solveHash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/sha1.dir/solveHash.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/personnels/labonne/Documents/SHA1/solveHash.c > CMakeFiles/sha1.dir/solveHash.c.i
+
+CMakeFiles/sha1.dir/solveHash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/sha1.dir/solveHash.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/personnels/labonne/Documents/SHA1/solveHash.c -o CMakeFiles/sha1.dir/solveHash.c.s
+
+CMakeFiles/sha1.dir/solveHash.c.o.requires:
+
+.PHONY : CMakeFiles/sha1.dir/solveHash.c.o.requires
+
+CMakeFiles/sha1.dir/solveHash.c.o.provides: CMakeFiles/sha1.dir/solveHash.c.o.requires
+	$(MAKE) -f CMakeFiles/sha1.dir/build.make CMakeFiles/sha1.dir/solveHash.c.o.provides.build
+.PHONY : CMakeFiles/sha1.dir/solveHash.c.o.provides
+
+CMakeFiles/sha1.dir/solveHash.c.o.provides.build: CMakeFiles/sha1.dir/solveHash.c.o
+
+
 # Object files for target sha1
 sha1_OBJECTS = \
-"CMakeFiles/sha1.dir/main.c.o" \
+"CMakeFiles/sha1.dir/testSHA1.c.o" \
 "CMakeFiles/sha1.dir/sha1.c.o" \
-"CMakeFiles/sha1.dir/sha1opt.c.o"
+"CMakeFiles/sha1.dir/sha1opt.c.o" \
+"CMakeFiles/sha1.dir/passwordGenerator.c.o" \
+"CMakeFiles/sha1.dir/earlyExit.c.o" \
+"CMakeFiles/sha1.dir/solveHash.c.o"
 
 # External object files for target sha1
 sha1_EXTERNAL_OBJECTS =
 
-sha1: CMakeFiles/sha1.dir/main.c.o
+sha1: CMakeFiles/sha1.dir/testSHA1.c.o
 sha1: CMakeFiles/sha1.dir/sha1.c.o
 sha1: CMakeFiles/sha1.dir/sha1opt.c.o
+sha1: CMakeFiles/sha1.dir/passwordGenerator.c.o
+sha1: CMakeFiles/sha1.dir/earlyExit.c.o
+sha1: CMakeFiles/sha1.dir/solveHash.c.o
 sha1: CMakeFiles/sha1.dir/build.make
 sha1: CMakeFiles/sha1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable sha1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/personnels/labonne/Documents/SHA1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable sha1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sha1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,9 +229,12 @@ CMakeFiles/sha1.dir/build: sha1
 
 .PHONY : CMakeFiles/sha1.dir/build
 
-CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/main.c.o.requires
+CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/testSHA1.c.o.requires
 CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/sha1.c.o.requires
 CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/sha1opt.c.o.requires
+CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/passwordGenerator.c.o.requires
+CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/earlyExit.c.o.requires
+CMakeFiles/sha1.dir/requires: CMakeFiles/sha1.dir/solveHash.c.o.requires
 
 .PHONY : CMakeFiles/sha1.dir/requires
 

@@ -4,10 +4,11 @@
 
 #include "sha1opt.h"
 
-uint32_t* SHA1_opt_0(unsigned char* s) {
+uint32_t* sha1_opt_0(unsigned char *s) {
 
     uint32_t* M = malloc(sizeof(uint32_t)*16);
     uint32_t* W = malloc(sizeof(uint32_t)*80);
+    uint32_t* PW = malloc(sizeof(uint32_t)*80);
     uint32_t* H = malloc(sizeof(uint32_t)*5);
     uint32_t* K = malloc(sizeof(uint32_t)*4);
     H[0]  = 0x67452301;
@@ -21,12 +22,11 @@ uint32_t* SHA1_opt_0(unsigned char* s) {
     K[3] = 0xCA62C1D6;
 
     uint64_t ml;
-    //uint160_t finalHash;
 
     int i = 0;
     int j = 0;
     unsigned char buffer[65]; // 64 ou 65 ??
-    /*      PADDING     */
+
     while (s[i*64+j]!='\0') {
         buffer[j] = s[i*64+j];
         if (j < 63) {
@@ -36,16 +36,14 @@ uint32_t* SHA1_opt_0(unsigned char* s) {
             buffer[j] = '\0';
             i++;
             j = 0;
-            //appeler fonction haschage pour buffer
+
             breakM(buffer,M);
-            //printf("\n%s\n",buffer);
-            precompute_opt_0(M,W);
-            extendM_opt_0(M,W);
-            //printW(W);
-            hashW(W,K,H);
-            //
+            precompute_opt_0(M,PW,W);
+            extendM_opt_0(M,PW,W);
+            hashW(W,H);
         }
     }
+
     ml = (i*64+j)*8;
     buffer[j++] = (unsigned char)0x80;
 
@@ -53,48 +51,42 @@ uint32_t* SHA1_opt_0(unsigned char* s) {
         memset(buffer+j,0,56-j);
     } else {
         memset(buffer+j,0,64-j);
-        //appeler fonction haschage pour buffer
         breakM(buffer,M);
-        //printf("\n%s\n",buffer);
-        precompute_opt_0(M,W);
-        extendM_opt_0(M,W);
-        //printW(W);
-        hashW(W,K,H);
-        //f560eda0
+        precompute_opt_0(M,PW,W);
+        extendM_opt_0(M,PW,W);
+        hashW(W,H);
         memset(buffer,0,56);
     }
+
     for (j = 56; j < 64; j++) {
         buffer[j] = (unsigned char) (ml>>((63-j)*8) & 0xff );
     }
+
     buffer[j] = '\0';
-    //appeler fonction haschage pour buffer
     breakM(buffer,M);
-    //printf("\n%s\n",buffer);
-    //printf("%d %d %d %d %d %d %d %d \n",buffer[0],buffer[1],buffer[2],buffer[3],buffer[60],buffer[61],buffer[62],buffer[63]);
-    precompute_opt_0(M,W);
-    extendM_opt_0(M,W);
-    //printW(W);
-    hashW(W,K,H);
-
-    //finalHash = H[0]<<128 | H[1]<<96 | H[2]<<64 | H[3]<<32 | H[4];
-
+    precompute_opt_0(M,PW,W);
+    extendM_opt_0(M,PW,W);
+    hashW(W,H);
     return H;
 }
 
-void precompute_opt_0(uint32_t* M, uint32_t* W) {
+void precompute_opt_0(uint32_t* M, uint32_t* PW, uint32_t* W) {
     int i;
     uint32_t tmp;
     W[0] = 0x0000;
+    PW[0] = 0x0000;
     for (i=1; i<16; i++) {
         W[i] = M[i];
+        PW[i] = M[i];
     }
     for (i=16; i<80; i++) {
-        tmp = W[i-3] ^ W[i-8] ^ W[i-14] ^ W[i-16];
-        W[i] = tmp<<1 | tmp>>31;
+        tmp = PW[i-3] ^ PW[i-8] ^ PW[i-14] ^ PW[i-16];
+        PW[i] = tmp<<1 | tmp>>31;
+        W[i] = PW[i];
     }
 }
 
-void extendM_opt_0(uint32_t* M, uint32_t* W) {
+void extendM_opt_0(uint32_t* M, uint32_t* PW, uint32_t* W) {
     int i;
     uint32_t w0[23];
     w0[0] = M[0];
@@ -111,60 +103,60 @@ void extendM_opt_0(uint32_t* M, uint32_t* W) {
     uint32_t w_4_6_7 = w_4_6 ^ w0[7];
     uint32_t w_4_8_12 = w_4_8 ^ w0[12];
 
-    W[16] = W[16] ^ w0[1];
-    W[19] = W[19] ^ w0[2];
-    W[22] = W[22] ^ w0[3];
-    W[24] = W[24] ^ w0[2];
-    W[25] = W[25] ^ w0[4];
-    W[28] = W[28] ^ w0[5];
-    W[30] = W[30] ^ w0[2] ^ w0[4];
-    W[31] = W[31] ^ w0[6];
-    W[32] = W[32] ^ w0[2] ^ w0[3];
-    W[34] = W[34] ^ w0[7];
-    W[35] = W[35] ^ w0[4];
-    W[36] = W[36] ^ w_4_6;
-    W[37] = W[37] ^ w0[8];
-    W[38] = W[38] ^ w0[4];
-    W[40] = W[40] ^ w0[4] ^ w0[9];
-    W[42] = W[42] ^ w0[6] ^ w0[8];
-    W[43] = W[43] ^ w0[10];
-    W[44] = W[44] ^ w0[3] ^ w0[6] ^ w0[7];
-    W[46] = W[46] ^ w0[4] ^ w0[11];
-    W[47] = W[47] ^ w_4_8;
-    W[48] = W[48] ^ w0[3] ^ w_4_8 ^ w0[5] ^ w0[10];
-    W[49] = W[49] ^ w0[12];
-    W[50] = W[50] ^ w0[8];
-    W[51] = W[51] ^ w_4_6;
-    W[52] = W[52] ^ w_4_8 ^ w0[13];
-    W[54] = W[54] ^ w0[7] ^ w0[10] ^ w0[12];
-    W[55] = W[55] ^ w0[14];
-    W[56] = W[56] ^ w_4_6_7 ^ w0[10] ^ w0[11];
-    W[57] = W[57] ^ w0[8];
-    W[58] = W[58] ^ w_4_8 ^ w0[15];
-    W[59] = W[59] ^ w_8_12;
-    W[60] = W[60] ^ w_4_8_12 ^ w0[7] ^ w0[14];
-    W[61] = W[61] ^ w0[16];
-    W[62] = W[62] ^ w0[6] ^ w_4_8_12;
-    W[63] = W[63] ^ w0[8];
-    W[64] = W[64] ^ w_4_6_7 ^ w_8_12 ^ w0[17];
-    W[66] = W[66] ^ w0[14] ^ w0[16];
-    W[67] = W[67] ^ w0[8] ^ w0[18];
-    W[68] = W[68] ^ w0[11] ^ w0[14] ^ w0[15];
-    W[70] = W[70] ^ w0[12] ^ w0[19];
-    W[71] = W[71] ^ w_12_16;
-    W[72] = W[72] ^ w0[5] ^ w0[11] ^ w_12_16 ^ w0[13] ^ w0[18];
-    W[73] = W[73] ^ w0[20];
-    W[74] = W[74] ^ w0[8] ^ w0[16];
-    W[75] = W[75] ^ w0[6] ^ w0[12] ^ w0[14];
-    W[76] = W[76] ^ w_7_8 ^ w_12_16 ^ w0[21];
-    W[78] = W[78] ^ w_7_8 ^ w0[15] ^ w0[18] ^ w0[20];
-    W[79] = W[79] ^ w0[8] ^ w0[22];
+    W[16] = PW[16] ^ w0[1];
+    W[19] = PW[19] ^ w0[2];
+    W[22] = PW[22] ^ w0[3];
+    W[24] = PW[24] ^ w0[2];
+    W[25] = PW[25] ^ w0[4];
+    W[28] = PW[28] ^ w0[5];
+    W[30] = PW[30] ^ w0[2] ^ w0[4];
+    W[31] = PW[31] ^ w0[6];
+    W[32] = PW[32] ^ w0[2] ^ w0[3];
+    W[34] = PW[34] ^ w0[7];
+    W[35] = PW[35] ^ w0[4];
+    W[36] = PW[36] ^ w_4_6;
+    W[37] = PW[37] ^ w0[8];
+    W[38] = PW[38] ^ w0[4];
+    W[40] = PW[40] ^ w0[4] ^ w0[9];
+    W[42] = PW[42] ^ w0[6] ^ w0[8];
+    W[43] = PW[43] ^ w0[10];
+    W[44] = PW[44] ^ w0[3] ^ w0[6] ^ w0[7];
+    W[46] = PW[46] ^ w0[4] ^ w0[11];
+    W[47] = PW[47] ^ w_4_8;
+    W[48] = PW[48] ^ w0[3] ^ w_4_8 ^ w0[5] ^ w0[10];
+    W[49] = PW[49] ^ w0[12];
+    W[50] = PW[50] ^ w0[8];
+    W[51] = PW[51] ^ w_4_6;
+    W[52] = PW[52] ^ w_4_8 ^ w0[13];
+    W[54] = PW[54] ^ w0[7] ^ w0[10] ^ w0[12];
+    W[55] = PW[55] ^ w0[14];
+    W[56] = PW[56] ^ w_4_6_7 ^ w0[10] ^ w0[11];
+    W[57] = PW[57] ^ w0[8];
+    W[58] = PW[58] ^ w_4_8 ^ w0[15];
+    W[59] = PW[59] ^ w_8_12;
+    W[60] = PW[60] ^ w_4_8_12 ^ w0[7] ^ w0[14];
+    W[61] = PW[61] ^ w0[16];
+    W[62] = PW[62] ^ w0[6] ^ w_4_8_12;
+    W[63] = PW[63] ^ w0[8];
+    W[64] = PW[64] ^ w_4_6_7 ^ w_8_12 ^ w0[17];
+    W[66] = PW[66] ^ w0[14] ^ w0[16];
+    W[67] = PW[67] ^ w0[8] ^ w0[18];
+    W[68] = PW[68] ^ w0[11] ^ w0[14] ^ w0[15];
+    W[70] = PW[70] ^ w0[12] ^ w0[19];
+    W[71] = PW[71] ^ w_12_16;
+    W[72] = PW[72] ^ w0[5] ^ w0[11] ^ w_12_16 ^ w0[13] ^ w0[18];
+    W[73] = PW[73] ^ w0[20];
+    W[74] = PW[74] ^ w0[8] ^ w0[16];
+    W[75] = PW[75] ^ w0[6] ^ w0[12] ^ w0[14];
+    W[76] = PW[76] ^ w_7_8 ^ w_12_16 ^ w0[21];
+    W[78] = PW[78] ^ w_7_8 ^ w0[15] ^ w0[18] ^ w0[20];
+    W[79] = PW[79] ^ w0[8] ^ w0[22];
 
 }
 
 /**
- *Fonction permettant de déterminer la rotation de w[t] à ajouter à chaque PW.
- *
+ * Fonction permettant de déterminer la rotation de w[t] à ajouter à chaque PW
+ * Et donc d'obtenir W[i] en fonction de sa valeur pre calculé et des rotations de w0
  */
 void wt_occurence(int t) {
     int i,j;

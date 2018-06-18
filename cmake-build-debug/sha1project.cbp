@@ -78,7 +78,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/personnels/labonne/Documents/SHA1/main.c">
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/earlyExit.c">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/earlyExit.h">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/passwordGenerator.c">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/passwordGenerator.h">
 			<Option target="sha1"/>
 		</Unit>
 		<Unit filename="/home/personnels/labonne/Documents/SHA1/sha1.c">
@@ -91,6 +100,15 @@
 			<Option target="sha1"/>
 		</Unit>
 		<Unit filename="/home/personnels/labonne/Documents/SHA1/sha1opt.h">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/solveHash.c">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/solveHash.h">
+			<Option target="sha1"/>
+		</Unit>
+		<Unit filename="/home/personnels/labonne/Documents/SHA1/testSHA1.c">
 			<Option target="sha1"/>
 		</Unit>
 		<Unit filename="/home/personnels/labonne/Documents/SHA1/CMakeLists.txt">

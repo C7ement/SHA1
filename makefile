@@ -4,7 +4,7 @@ CFLAGS=-Wextra -pedantic -O3
 PATHOBJ=./obj/
 PATHSRC= ./
 PATHBIN= ./
-OBJ=$(addprefix $(PATHOBJ),main.o sha1.o)
+OBJ=$(addprefix $(PATHOBJ),testSHA1.o sha1.o sha1opt.o solveHash.o earlyExit.o passwordGenerator.o)
 
 all: main
 
